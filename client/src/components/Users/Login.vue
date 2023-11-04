@@ -1,6 +1,6 @@
 
 <template>
-    <div>
+    <div >
         <center>
         <p><h1>CAFE DAYA</h1></p>
         <h1>User Login</h1>
@@ -11,8 +11,10 @@
             <div class="error" v-if="error">{{ error }}</div>
         </form></center>
     </div>
+    
 </template>
 <style scoped>
+
 .error {
     color: red;
 }

@@ -3,8 +3,8 @@
       <h1>Show All Users</h1>
       <div><h2>จำนวน User ทั้งหมด {{ users.length }} คน</h2></div>
       <div><button @click="navigateTo('/user/create')">+Create User</button>
-        <button @click="navigateTo('/menus')">ดูเมนูทั้งหมด</button>
-        <button v-on:click="logout" >Logout</button></div><hr>
+        <button  @click="navigateTo('/menus')">ดูเมนูทั้งหมด</button>
+        <button style="background-color: red;" v-on:click="logout" >Logout</button></div><hr>
       <div v-for="user in users" v-bind:key="user.id">
         <p>User id : {{ user.id }}</p>
           <p>ชื่อ : {{ user.name }}</p>
@@ -14,7 +14,7 @@
       
         <div><button v-on:click="navigateTo('/user/'+user.id)">ดูข้อมูลผู้ใช้</button>
         <button @click="navigateTo('/user/edit/'+user.id)" >Edit User</button>
-        <button @click="deleteUser(user)" >Delete User</button></div>
+        <button style="background-color: crimson;" @click="deleteUser(user)" >Delete User</button></div>
         <hr>
       </div>
     </div>

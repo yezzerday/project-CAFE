@@ -1,6 +1,8 @@
 
 <template>
     <div>
+      <center>
+      <h1>CAFE DAYA</h1>
       <h1>Create User</h1>
       <form v-on:submit.prevent ="createUser">
         <p>ชื่อ : <input type="text" v-model="user.name"></p>
@@ -8,7 +10,7 @@
         <p>email : <input type="text" v-model="user.email"></p>
         <p>password : <input type="text" v-model="user.password"></p>
         <p><button type="submit"><b>Create User</b></button></p>
-      </form>
+      </form></center>
     </div>
   </template>
 
@@ -45,5 +47,7 @@
     }
   };
   </script>
-  <style></style>
+  <style scoped>
+  
+</style>
   

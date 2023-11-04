@@ -1,5 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
+import Homepage from "@/components/Homepage";
 // Users
 import UserIndex from "@/components/Users/Index";
 import UserCreate from "@/components/Users/CreateUser";
@@ -16,6 +17,11 @@ import Login from "@/components/Users/login";
 Vue.use(Router);
 export default new Router({
   routes: [
+    {
+      path: "/",
+      name: "Homepage",
+      component: Homepage
+    },
     {
       path: "/users",
       name: "users",
